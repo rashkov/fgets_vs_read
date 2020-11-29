@@ -11,7 +11,7 @@ int main(int argc, char **argv){
   char buf[100];
   int C = 2;
 
-  while(count = read(fd, buf, C)){
+  while((count = read(fd, buf, C))){
     if(count < 0){
       perror(NULL);
       return errno;
